@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+    padding: 20px 0; 
+    color:blue;
+
+}
+
+nav .title {
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 0.9;
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    color: rgb(110, 109, 109);
+    
+    
+}
+
+/* hamburger menu*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 15px;
+
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/*hamburger mmenu animation*/
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+main {
+    padding: 30px 50px;
+    
+}
+
+.gambar img {
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-left:100px;
+    margin-top: 100px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    box-shadow: 4px 4px 4px purple;
+}
+
+.profil {
+   float: left;
+   margin-left: 150px;
+   margin-top: 220px;
+   color: white;
+   font-size: 25px;      
+}
+
+.profil h3 {
+    opacity: 0.5;
+}
+
+.profil p {
+    opacity: 0.5;
+}
+
+footer {
+
+    position:absolute;
+    bottom:0;
+    width:90%;
+    height:60px;
+    color: white;
+    text-align: center;
+    margin-right: 30%;
+    
+}
+
+body {
+    background-image: url(https://i.pinimg.com/564x/21/5d/bb/215dbb403559a6f4f1f79e1fd2f1e802.jpg);
+    background-size: cover; 
+    overflow: hidden;
+    overflow: scroll;
+     
+}  
+
+
+
