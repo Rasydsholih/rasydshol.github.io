@@ -19,7 +19,7 @@
         flex-direction: column;
         text-align: center;
         background-color: grey;
-        z-index: -1;
+        z-index: 1;
         transform: translateX(100%);
         transition: all 1s;
 
@@ -28,6 +28,12 @@
     nav ul.slide {
         transform: translateX(0);
     }
+
+    main {
+        flex-direction: column;
+    }
+
+
 
     
 }
